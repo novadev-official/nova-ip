@@ -1,0 +1,19 @@
+#!/bin/bash
+clear
+echo "=========================="
+echo " 🔥 NOVA IP TOOLKIT 🔥"
+echo "=========================="
+echo "1) Find My Public IP"
+echo "2) Find Website IP"
+echo "3) Find Local IP"
+echo "4) Exit"
+echo ""
+read -p "Choose an option: " opt
+
+case $opt in
+1) bash tools/myip.sh ;;
+2) bash tools/websiteip.sh ;;
+3) bash tools/localip.sh ;;
+4) exit ;;
+*) echo "Invalid option" ;;
+esac
